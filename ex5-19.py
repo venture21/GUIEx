@@ -38,7 +38,7 @@ class MyApp(QWidget):
         self.le.clear()
 
     def clear_text(self):
-        self.tb.clear(if)
+        self.tb.clear()
 
 
 if __name__ == '__main__':
