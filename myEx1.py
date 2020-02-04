@@ -38,6 +38,8 @@ class MyApp(QMainWindow):
         self.channel = 3
         self.cvImage = np.ones((self.width, self.height, self.channel), np.uint8) * 255
         cv2.cvtColor(self.cvImage, cv2.COLOR_BGR2RGB, self.cvImage)
+
+
         self.mQImage = QImage(self.cvImage, self.width, self.height, self.cvImage.strides[0], QImage.Format_RGB888)
         self.mQImage.scaledToWidth(640, Qt.FastTransformation)
 
